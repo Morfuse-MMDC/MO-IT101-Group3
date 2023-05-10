@@ -1,0 +1,60 @@
+.split-pane-divider {
+    -fx-shape: "M0 0 H1 V1 H0 Z";
+    -fx-background-color: #cccccc;
+    -fx-border-color: #999999;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-opacity: 0;
+}
+
+.button {
+    -fx-background-radius: 20;
+    -fx-font-family: "Segoe UI Bold", sans-serif;
+    -fx-background-color: #393E46;
+    -fx-font-weight: bold;
+    -fx-text-fill: #EEEEEE;
+    -fx-background-insets: 0;
+}
+
+.button:pressed {
+    -fx-background-insets: 0 1 1 0, 0, 1 0 0 1;
+    -fx-font-size: 11px;
+}
+
+.text-field, .password-field {
+    -fx-background-color: #EEEEEE;
+}
+
+#username, #password{
+    -fx-font-family: "Segoe UI Semibold", sans-serif;
+}
+
+#userHead{
+    
+    -fx-background-radius: 50%;
+}
+
+#userTab{
+    -fx-background-radius: 20;
+}
+
+#Logout, #ViewProfile{
+    -fx-font-size: 15px;
+}
+
+#Logout:pressed, #ViewProfile:pressed{
+    -fx-font-size: 14px;
+}
+
+#Login{
+    -fx-background-radius: 15;
+    -fx-font-family: "Segoe UI Bold", sans-serif;
+    -fx-background-color: #0074D9;
+    -fx-font-weight: bold;
+    -fx-text-fill: #EEEEEE;
+    -fx-background-insets: 0;
+    -fx-font-size: 13px;
+}
+
+
+

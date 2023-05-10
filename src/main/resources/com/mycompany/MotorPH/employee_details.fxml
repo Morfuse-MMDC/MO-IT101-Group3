@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="719.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.MotorPH.Employee_details">
+   <children>
+      <SplitPane dividerPositions="0.23" layoutY="-63.0" orientation="VERTICAL" prefHeight="788.0" prefWidth="1181.0" style="-fx-background-color: #222831;" stylesheets="@../../../styles/fxml.css" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-63.0">
+        <items>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="1179.0" style="-fx-background-color: #393E46; -fx-background-radius: 40;">
+               <children>
+                  <Circle fill="WHITE" layoutX="171.0" layoutY="117.0" onMouseClicked="#userHead" radius="32.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label id="header" alignment="CENTER" layoutX="488.0" layoutY="70.0" prefHeight="95.0" prefWidth="203.0" stylesheets="@../../../styles/fxml.css" text="Your Info" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB" size="59.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userName" layoutX="242.0" layoutY="98.0" lineSpacing="1.0" prefHeight="37.0" prefWidth="179.0" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="currentTime" alignment="CENTER" contentDisplay="CENTER" layoutX="909.0" layoutY="80.0" prefHeight="36.0" prefWidth="127.0" text="05:56:00 AM" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="currentDate" alignment="CENTER" contentDisplay="CENTER" layoutX="903.0" layoutY="120.0" prefHeight="36.0" prefWidth="139.0" text="05:56:00 AM" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB" size="29.0" />
+                     </font>
+                  </Label>
+                  <Line endX="100.0" layoutX="972.0" layoutY="118.0" startX="-100.0" stroke="WHITE" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="553.0" prefWidth="1179.0">
+               <children>
+                  <Button id="dashboardButton" layoutX="35.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="37.0" prefWidth="179.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" text="Back to Dashboard" textFill="#393131" wrapText="true">
+                     <font>
+                        <Font name="Centaur" size="13.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane id="anchorPane" layoutX="35.0" layoutY="171.0" prefHeight="384.0" prefWidth="1110.0" style="-fx-background-color: #eeeeee;" stylesheets="@../../../styles/GeneralDesign.css">
+                     <children>
+                        <Label alignment="TOP_LEFT" layoutX="31.0" layoutY="71.0" prefHeight="33.0" prefWidth="179.0" text="Employee Number" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="employeeNum" alignment="TOP_LEFT" layoutX="31.0" layoutY="104.0" prefHeight="33.0" prefWidth="159.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="31.0" layoutY="146.0" prefHeight="33.0" prefWidth="179.0" text="Birthday" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="birthday" alignment="TOP_LEFT" layoutX="31.0" layoutY="179.0" prefHeight="33.0" prefWidth="159.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="31.0" layoutY="295.0" prefHeight="33.0" prefWidth="179.0" text="Address" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="address" alignment="TOP_LEFT" layoutX="31.0" layoutY="328.0" prefHeight="33.0" prefWidth="629.0" text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" textFill="#393e46" wrapText="true">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="31.0" layoutY="221.0" prefHeight="33.0" prefWidth="179.0" text="Phone Number" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="phoneNumber" alignment="TOP_LEFT" layoutX="31.0" layoutY="255.0" prefHeight="33.0" prefWidth="159.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="231.0" layoutY="221.0" prefHeight="33.0" prefWidth="179.0" text="SSS" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sss" alignment="TOP_LEFT" layoutX="231.0" layoutY="255.0" prefHeight="33.0" prefWidth="159.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="231.0" layoutY="72.0" prefHeight="33.0" prefWidth="179.0" text="Philhealth" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Philhealth" alignment="TOP_LEFT" layoutX="231.0" layoutY="105.0" prefHeight="33.0" prefWidth="159.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="231.0" layoutY="146.0" prefHeight="33.0" prefWidth="179.0" text="TIN" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tin" alignment="TOP_LEFT" layoutX="231.0" layoutY="179.0" prefHeight="33.0" prefWidth="159.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="410.0" layoutY="72.0" prefHeight="33.0" prefWidth="179.0" text="Pag-ibig" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pagibig" alignment="TOP_LEFT" layoutX="410.0" layoutY="106.0" prefHeight="33.0" prefWidth="159.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="410.0" layoutY="146.0" prefHeight="33.0" prefWidth="179.0" text="Status" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="status" alignment="TOP_LEFT" layoutX="410.0" layoutY="179.0" prefHeight="33.0" prefWidth="159.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="579.0" layoutY="146.0" prefHeight="33.0" prefWidth="179.0" text="Position" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="position" alignment="TOP_LEFT" layoutX="579.0" layoutY="179.0" prefHeight="33.0" prefWidth="227.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="579.0" layoutY="73.0" prefHeight="33.0" prefWidth="211.0" text="Immediate Supervisor" textFill="#393e46" textOverrun="CLIP">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="immediateSupervisor" alignment="TOP_LEFT" layoutX="579.0" layoutY="106.0" prefHeight="33.0" prefWidth="201.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane id="anchorPane" layoutX="837.0" layoutY="59.0" prefHeight="150.0" prefWidth="238.0" style="-fx-background-color: #393E46;" stylesheets="@../../../styles/GeneralDesign.css">
+                           <children>
+                              <Label alignment="CENTER" layoutX="30.0" layoutY="14.0" prefHeight="33.0" prefWidth="179.0" text="Attendance" textFill="#eeeeee">
+                                 <font>
+                                    <Font name="Agency FB Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="numOfHours" alignment="CENTER" layoutX="40.0" layoutY="47.0" prefHeight="33.0" prefWidth="159.0" text="0 hours" textFill="#eeeeee">
+                                 <font>
+                                    <Font name="Agency FB" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Button id="ViewProfile" cancelButton="true" layoutX="30.0" layoutY="91.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToAttendance" prefHeight="37.0" prefWidth="179.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" text="View More" textFill="#393131" wrapText="true">
+                                 <font>
+                                    <Font name="Centaur" size="13.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <Label alignment="TOP_LEFT" layoutX="410.0" layoutY="222.0" prefHeight="33.0" prefWidth="179.0" text="Hourly Rate" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="hourly_rate" alignment="TOP_LEFT" layoutX="410.0" layoutY="255.0" prefHeight="33.0" prefWidth="159.0" text="xxxxxxxxxx" textFill="#393e46">
+                           <font>
+                              <Font name="Agency FB" size="23.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane id="anchorPane" layoutX="837.0" layoutY="223.0" prefHeight="150.0" prefWidth="238.0" style="-fx-background-color: #393E46;" stylesheets="@../../../styles/GeneralDesign.css">
+                           <children>
+                              <Label alignment="CENTER" layoutX="30.0" layoutY="14.0" prefHeight="33.0" prefWidth="179.0" text="Payroll" textFill="#eeeeee">
+                                 <font>
+                                    <Font name="Agency FB Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="netPay" alignment="CENTER" layoutX="40.0" layoutY="49.0" prefHeight="33.0" prefWidth="159.0" text="₱0.0" textFill="#eeeeee">
+                                 <font>
+                                    <Font name="Agency FB" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Button id="ViewProfile" cancelButton="true" layoutX="30.0" layoutY="91.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToPayroll" prefHeight="37.0" prefWidth="179.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" text="View More" textFill="#393131" wrapText="true">
+                                 <font>
+                                    <Font name="Centaur" size="13.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+                  <AnchorPane id="anchorPane" layoutX="35.0" layoutY="69.0" prefHeight="150.0" prefWidth="1110.0" style="-fx-background-color: #393E46;" stylesheets="@../../../styles/GeneralDesign.css">
+                     <children>
+                        <Circle fill="WHITE" layoutX="555.0" layoutY="53.0" radius="40.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Label fx:id="fullName" alignment="CENTER" layoutX="423.0" layoutY="104.0" prefHeight="27.0" prefWidth="264.0" text="Full Name" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="numOfDays" alignment="CENTER" layoutX="929.0" layoutY="48.0" prefHeight="33.0" prefWidth="159.0" text="xxxxxxxxxx" textFill="#eeeeee" visible="false">
+                           <font>
+                              <Font name="Agency FB" size="27.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+                  <AnchorPane id="userTab" fx:id="userTab" layoutX="130.0" prefHeight="71.0" prefWidth="219.0" style="-fx-background-color: #EEEEEE;" stylesheets="@../../../styles/fxml.css" visible="false">
+                     <children>
+                        <Button id="Logout" cancelButton="true" layoutX="130.0" layoutY="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Logout" prefHeight="33.0" prefWidth="75.0" scaleShape="false" stylesheets="@../../../styles/fxml.css" text="Logout" wrapText="true">
+                           <font>
+                              <Font name="Centaur" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button id="ViewProfile" layoutX="14.0" layoutY="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="33.0" prefWidth="109.0" scaleShape="false" stylesheets="@../../../styles/fxml.css" text="Dashboard" wrapText="true" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="19.0">
+                           <font>
+                              <Font name="Centaur" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

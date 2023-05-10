@@ -1,0 +1,226 @@
+#anchorPane {
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.button {
+    -fx-background-radius: 20;
+    -fx-font-family: "Segoe UI Bold", sans-serif;
+    -fx-background-color: #393E46;
+    -fx-font-weight: bold;
+    -fx-text-fill: #EEEEEE;
+    -fx-background-insets: 0;
+}
+
+.button:pressed {
+    -fx-background-insets: 0 1 1 0, 0, 1 0 0 1;
+    -fx-font-size: 11px;
+}
+
+.text-field, .password-field {
+    -fx-background-color: #EEEEEE;
+}
+
+#username, #password{
+    -fx-font-family: "Segoe UI Semibold", sans-serif;
+}
+
+#userHead{
+    
+    -fx-background-radius: 50%;
+}
+
+#userTab{
+    -fx-background-radius: 20;
+}
+
+#Logout, #ViewProfile{
+    -fx-font-size: 15px;
+}
+
+#Logout:pressed, #ViewProfile:pressed{
+    -fx-font-size: 14px;
+}
+
+#viewMore{
+    -fx-background-radius: 10;
+    -fx-font-size: 16px;
+}
+
+#viewMore:pressed {
+    -fx-background-insets: 0 1 1 0, 0, 1 0 0 1;
+    -fx-font-size: 15px;
+}
+
+#ViewProfile{
+    -fx-background-radius: 10;
+    -fx-background-color: #EEEEEE; 
+    -fx-text-fill: #393E46;
+}
+
+#dashboardButton{
+    -fx-background-radius: 10;
+    -fx-background-color: #393E46; 
+    -fx-text-fill: #EEEEEE;
+    -fx-font-size: 16px;
+}
+
+#dashboardButton:pressed{
+    -fx-background-insets: 0 1 1 0, 0, 1 0 0 1;
+    -fx-font-size: 15px;
+}
+
+#viewMoreSmall{
+    -fx-background-radius: 10;
+    -fx-font-size: 14px;
+}
+
+#viewMoreSmall:pressed {
+    -fx-background-insets: 0 1 1 0, 0, 1 0 0 1;
+    -fx-font-size: 13px;
+}
+
+.choice-box {
+    -fx-background-color: #393E46;
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 18px;
+    -fx-background-radius: 10;
+    -fx-mark-color: #EEEEEE;
+}
+
+.choice-box .context-menu { 
+    -fx-background-color: #393E46; 
+    -fx-background-radius: 10;
+}
+
+.choice-box .menu-item > .label { 
+    -fx-text-fill: #EEEEEE; 
+}
+
+.choice-box .menu-item:focused { 
+    -fx-background-color: #4C525C;
+    -fx-background-radius: 10;
+}
+
+.choice-box > .label { 
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 20px;
+    -fx-text-fill: #EEEEEE;
+}
+
+.table-view {
+    -fx-background-radius: 10;
+    -fx-background-color: #EEEEEE;
+}
+
+.table-row-cell:selected .cell {
+    -fx-background-color: #4C525C; /* color of selected row cells */
+    -fx-border-color: #4C525C;
+}
+
+.table-view .cell {
+    -fx-alignment: CENTER;
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 20px;
+    -fx-background-color: #EEEEEE;
+}
+
+.table-view .column-header {
+    -fx-background-radius: 10;
+    -fx-background-color: #393E46;
+}
+
+.table-view .column-header-background > .show-hide-columns-button,
+.table-view .column-header-background > .resize-line {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #393E46;
+    -fx-background-radius: 10;
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.table-view .column-header > .label {
+    -fx-font-size: 23px;
+    -fx-font-family: "Agency FB";
+    -fx-text-fill: #EEEEEE;
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.table-view .table-cell {
+    -fx-padding: 1em 0.5em 0.5em 0.5em; /* Adjust as needed */
+}
+
+/* Set the width and color of the vertical scrollbar */
+.table-view .scroll-bar:vertical {
+    -fx-pref-width: 10px;
+    -fx-background-color: #E0E0E0;
+    -fx-background-radius: 10;
+}
+
+/* Set the color and size of the thumb */
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #393E46;
+    -fx-min-height: 20px;
+    -fx-max-height: 20px;
+    -fx-background-radius: 10;
+}
+
+/* Set the color and size of the track */
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: #E0E0E0;
+    -fx-min-height: 20px;
+    -fx-max-height: 20px;
+    -fx-background-radius: 10;
+}
+
+/* Set the height and color of the horizontal scrollbar */
+.table-view .scroll-bar:horizontal {
+    -fx-pref-height: 10px;
+    -fx-background-color: #E0E0E0;
+}
+
+/* Set the color and size of the thumb */
+.table-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: #393E46;
+    -fx-min-width: 20px;
+    -fx-max-width: 20px;
+}
+
+/* Set the color and size of the track */
+.table-view .scroll-bar:horizontal .track {
+    -fx-background-color: #E0E0E0;
+    -fx-min-width: 20px;
+    -fx-max-width: 20px;
+}
+
+.table-view .scroll-bar:horizontal .increment-button,
+.table-view .scroll-bar:horizontal .decrement-button,
+.table-view .scroll-bar:vertical .increment-button,
+.table-view .scroll-bar:vertical .decrement-button {
+    -fx-padding: 0;
+}
+
+#summaryPane {
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#noHeader .column-header-background {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+    -fx-max-height: 0;
+    -fx-border-width: 0;
+    -fx-border-style: none;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+    -fx-alignment: center-left;
+    -fx-display: none;
+}
+
+
+
+
