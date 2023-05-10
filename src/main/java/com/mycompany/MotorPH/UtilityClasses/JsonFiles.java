@@ -21,9 +21,9 @@ import java.nio.file.Paths;
  */
 public final class JsonFiles {
     
-    private static String attendanceJson = "classes/JSON_Files/Attendance.json";
+    private static String attendanceJson = "./src/main/resources/JSON_Files/Attendance.json";
     
-    private static String employeesJson = "classes/JSON_Files/Employees.json";
+    private static String employeesJson = "./src/main/resources/JSON_Files/Employees.json";
     
     private JsonFiles() {
         throw new AssertionError();
