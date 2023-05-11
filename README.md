@@ -28,9 +28,7 @@ git clone https://github.com/YOUR_USERNAME/REPOSITORY_NAME.git
 
 ```
 
-5. Replace `YOUR_USERNAME` with your GitHub username, and `REPOSITORY_NAME` with the name of the repository.
-
-6. After cloning the repository, you'll have a local copy of the code that you can build through an IDE.
+5. After cloning the repository, you'll have a local copy of the code that you can build through an IDE.
 
 
 ## <a name="instructions"></a>Instructions for the Google Drive Link
