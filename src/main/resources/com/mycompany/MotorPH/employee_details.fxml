@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="719.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.MotorPH.Employee_details">
+<AnchorPane prefHeight="719.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.MotorPH.EmployeeDetails">
    <children>
       <SplitPane dividerPositions="0.23" layoutY="-63.0" orientation="VERTICAL" prefHeight="788.0" prefWidth="1181.0" style="-fx-background-color: #222831;" stylesheets="@../../../styles/fxml.css" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-63.0">
         <items>

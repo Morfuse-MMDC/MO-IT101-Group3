@@ -71,9 +71,9 @@ public class Attendance implements Initializable {
     @FXML
     private Label monthChosen;
     @FXML
-    public TableView<AttendanceRecord> attendanceTable;
+    public TableView<AttendanceData> attendanceTable;
     
-    private DataModel dataModel = new DataModel();
+    private UserData dataModel = new UserData();
     
     private Dashboard dashboard = new Dashboard();
     
@@ -154,16 +154,16 @@ public class Attendance implements Initializable {
      *****************************/
     
     public void getTableContent() throws IOException{
-        List<AttendanceRecord> attendanceRecords = loadAttendanceRecordsFromJsonFile(JsonFiles.getAttendanceJsonPath());
-        ObservableList<AttendanceRecord> observableRecords = FXCollections.observableArrayList(attendanceRecords);
+        List<AttendanceData> attendanceRecords = loadAttendanceRecordsFromJsonFile(JsonFiles.getAttendanceJsonPath());
+        ObservableList<AttendanceData> observableRecords = FXCollections.observableArrayList(attendanceRecords);
         attendanceTable.setItems(observableRecords);
         
         // Ensure that the TableView's columns are configured to display the correct properties of the objects in the ObservableList
-        TableColumn<AttendanceRecord, String> dateColumn = (TableColumn<AttendanceRecord, String>) attendanceTable.getColumns().get(0);
-        TableColumn<AttendanceRecord, String> timeInColumn = (TableColumn<AttendanceRecord, String>) attendanceTable.getColumns().get(1);
-        TableColumn<AttendanceRecord, String> timeOutColumn = (TableColumn<AttendanceRecord, String>) attendanceTable.getColumns().get(2);
-        TableColumn<AttendanceRecord, String> hoursRenderedColumn = (TableColumn<AttendanceRecord, String>) attendanceTable.getColumns().get(3);
-        TableColumn<AttendanceRecord, String> present = (TableColumn<AttendanceRecord, String>) attendanceTable.getColumns().get(4);
+        TableColumn<AttendanceData, String> dateColumn = (TableColumn<AttendanceData, String>) attendanceTable.getColumns().get(0);
+        TableColumn<AttendanceData, String> timeInColumn = (TableColumn<AttendanceData, String>) attendanceTable.getColumns().get(1);
+        TableColumn<AttendanceData, String> timeOutColumn = (TableColumn<AttendanceData, String>) attendanceTable.getColumns().get(2);
+        TableColumn<AttendanceData, String> hoursRenderedColumn = (TableColumn<AttendanceData, String>) attendanceTable.getColumns().get(3);
+        TableColumn<AttendanceData, String> present = (TableColumn<AttendanceData, String>) attendanceTable.getColumns().get(4);
         
         // Set the values of each column
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
@@ -173,13 +173,13 @@ public class Attendance implements Initializable {
         present.setCellValueFactory(new PropertyValueFactory<>("present"));
     }
 
-    public List<AttendanceRecord> loadAttendanceRecordsFromJsonFile(String filePath) throws IOException {
-        List<AttendanceRecord> attendanceRecords = new ArrayList<>();
+    public List<AttendanceData> loadAttendanceRecordsFromJsonFile(String filePath) throws IOException {
+        List<AttendanceData> attendanceRecords = new ArrayList<>();
 
         // Load the JSON file as a JsonArray
         JsonArray jsonArray = JsonFiles.getAttendanceJSON(filePath);
 
-        // Loop through each element in the array and create an AttendanceRecord object for each one
+        // Loop through each element in the array and create an AttendanceData object for each one
         for (JsonElement element : jsonArray) {
             
             JsonObject attendanceJson = element.getAsJsonObject();
@@ -195,7 +195,7 @@ public class Attendance implements Initializable {
                 String present = isPresent(hoursRendered);
                 setSummaryLabels();
                 
-                AttendanceRecord attendanceRecord = new AttendanceRecord(date, timeIn, timeOut, hoursRendered + " hours", present);
+                AttendanceData attendanceRecord = new AttendanceData(date, timeIn, timeOut, hoursRendered + " hours", present);
                 attendanceRecords.add(attendanceRecord);   
             }
             

@@ -27,7 +27,7 @@ public class LoginPage {
     @FXML
     private Label wrongLogin;
     
-    private DataModel dataModel = new DataModel();
+    private UserData dataModel = new UserData();
     
     private Month currentMonth = YearMonth.now().getMonth();
 

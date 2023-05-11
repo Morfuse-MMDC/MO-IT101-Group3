@@ -63,7 +63,7 @@ public class Dashboard implements Initializable {
     @FXML
     private Label userName;
     
-    private DataModel dataModel = new DataModel();
+    private UserData dataModel = new UserData();
     @FXML
     private Label lastName;
     @FXML

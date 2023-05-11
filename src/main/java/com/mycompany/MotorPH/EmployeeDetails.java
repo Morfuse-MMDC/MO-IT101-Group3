@@ -29,7 +29,7 @@ import javafx.scene.shape.Circle;
  *
  * @author Rolis
  */
-public class Employee_details implements Initializable {
+public class EmployeeDetails implements Initializable {
 
     @FXML
     private Label userName;
@@ -42,7 +42,7 @@ public class Employee_details implements Initializable {
     @FXML
     private Label fullName;
     
-    private DataModel dataModel = new DataModel();
+    private UserData dataModel = new UserData();
     
     private Dashboard dashboard = new Dashboard();
     @FXML

@@ -16,7 +16,7 @@ import java.lang.reflect.Type;
  *
  * @author Rolis
  */
-public class AttendanceRecord {
+public class AttendanceData {
     private String date;
     private String timeIn;
     private String timeOut;
@@ -25,7 +25,7 @@ public class AttendanceRecord {
     private Attendance attendance = new Attendance();
 
     
-    public AttendanceRecord(String date, String timeIn, String timeOut, String hoursRendered, String present) {
+    public AttendanceData(String date, String timeIn, String timeOut, String hoursRendered, String present) {
         this.date = date;
         this.timeIn = timeIn;
         this.timeOut = timeOut;

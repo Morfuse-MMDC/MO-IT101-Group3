@@ -8,7 +8,7 @@ package com.mycompany.MotorPH;
  *
  * @author Rolis
  */
-public class DataModel {
+public class UserData {
     private String user;
     private String pass;
     private String netPay;

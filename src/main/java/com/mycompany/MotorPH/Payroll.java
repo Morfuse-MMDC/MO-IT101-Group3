@@ -72,9 +72,9 @@ public class Payroll implements Initializable {
     private ChoiceBox<Month> attendanceChoose;
     @FXML
     private Label monthChosen;
-    public TableView<AttendanceRecord> attendanceTable;
+    public TableView<AttendanceData> attendanceTable;
     
-    private DataModel dataModel = new DataModel();
+    private UserData dataModel = new UserData();
     
     private Dashboard dashboard = new Dashboard();
     

@@ -18,7 +18,7 @@ public class App extends Application {
     
     private static Scene scene;
     
-    private static DataModel dataModel = new DataModel();
+    private static UserData dataModel = new UserData();
     
     public void setDataModel(String user, String pass) {
         dataModel.setData(user, pass);
@@ -58,8 +58,8 @@ public class App extends Application {
         if (controller instanceof Dashboard) {
             Dashboard dashboard = (Dashboard) controller;
             dashboard.setDataModel(user, pass, month);
-        } else if (controller instanceof Employee_details) {
-            Employee_details employeeDetails = (Employee_details) controller;
+        } else if (controller instanceof EmployeeDetails) {
+            EmployeeDetails employeeDetails = (EmployeeDetails) controller;
             employeeDetails.setDataModel(user, pass, numOfHours, netPay, month);
         } else if (controller instanceof Attendance) {
             Attendance attendance = (Attendance) controller;
