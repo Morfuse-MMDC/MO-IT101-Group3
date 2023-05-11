@@ -50,7 +50,7 @@ To successfully run the program:
 
 An employee's username is their `last name`, and their password is their `employee #`.
 
-Navigate this [Google Sheet](https://docs.google.com/spreadsheets/d/18gKcoy7OdXNTP_1juBo1bEUjvPpt1pdkZXsvpjDPArE/edit?usp=sharing) file to get a better view of each employee's login credentials.
+Navigate this [Google Sheet](https://docs.google.com/spreadsheets/d/1hEutTTQ_ekhL4EHQb0IpFjjEWZVMSNq4GxZHrawqwHY/edit?usp=sharing) file to get a better view of each employee's login credentials.
 
 
 
