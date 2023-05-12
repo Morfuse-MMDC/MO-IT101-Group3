@@ -1,4 +1,4 @@
-# MotorPH
+# MotorPH Employee Portal
 
 An employee portal for MotorPH made by **Group 3**. This project took **one and a half months** to accomplish. 
 
