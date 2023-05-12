@@ -23,9 +23,7 @@ To build the program yourself:
 4. Once you've forked the repository, you can clone it to your local machine using the `git clone` command. For example:
 
 ```
-
 git clone https://github.com/YOUR_USERNAME/REPOSITORY_NAME.git
-
 ```
 
 5. After cloning the repository, you'll have a local copy of the code that you can build through an IDE.
