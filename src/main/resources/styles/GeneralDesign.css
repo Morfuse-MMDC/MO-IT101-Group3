@@ -3,6 +3,24 @@
     -fx-background-radius: 20;
 }
 
+#anchorPaneGhost{
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-color: #4C525C;
+    -fx-border-color: #F5F5F5;
+    -fx-border-style: dashed;
+    -fx-border-width: 1.5;
+}
+
+#viewMoreGhost{
+    -fx-background-radius: 10;
+    -fx-opacity: 70%;
+}
+
+#viewMoreGhost:pressed{
+    -fx-background-insets: 0;
+}
+
 .button {
     -fx-background-radius: 20;
     -fx-font-family: "Segoe UI Bold", sans-serif;

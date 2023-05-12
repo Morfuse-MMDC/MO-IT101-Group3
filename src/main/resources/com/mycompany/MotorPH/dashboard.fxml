@@ -40,7 +40,7 @@
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="553.0" prefWidth="1179.0">
                <children>
-                  <AnchorPane id="anchorPane" layoutX="114.0" layoutY="264.0" prefHeight="221.0" prefWidth="305.0" style="-fx-background-color: #eeeeee;" stylesheets="@../../../styles/GeneralDesign.css">
+                  <AnchorPane id="anchorPane" layoutX="113.0" layoutY="264.0" prefHeight="221.0" prefWidth="305.0" style="-fx-background-color: #eeeeee;" stylesheets="@../../../styles/GeneralDesign.css">
                      <children>
                         <Button id="viewMore" layoutX="88.0" layoutY="141.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toYourInfo" prefHeight="41.0" prefWidth="130.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" text="View More" wrapText="true">
                            <font>
@@ -62,7 +62,7 @@
                         </Button>
                      </children>
                   </AnchorPane>
-                  <AnchorPane id="anchorPane" layoutX="114.0" layoutY="116.0" prefHeight="254.0" prefWidth="305.0" style="-fx-background-color: #393E46;" stylesheets="@../../../styles/GeneralDesign.css">
+                  <AnchorPane id="anchorPane" layoutX="113.0" layoutY="116.0" prefHeight="254.0" prefWidth="305.0" style="-fx-background-color: #393E46;" stylesheets="@../../../styles/GeneralDesign.css">
                      <children>
                         <Circle fill="WHITE" layoutX="62.0" layoutY="53.0" onMouseClicked="#userHead" radius="26.0" stroke="WHITE" strokeType="INSIDE" />
                         <Label fx:id="lastName" alignment="TOP_LEFT" layoutX="143.0" layoutY="18.0" prefHeight="41.0" prefWidth="127.0" text="Last Name" textFill="WHITE">
@@ -97,7 +97,7 @@
                            </font>
                         </Label>
                      </children></AnchorPane>
-                  <AnchorPane id="anchorPane" layoutX="438.0" layoutY="153.0" prefHeight="138.0" prefWidth="305.0" style="-fx-background-color: #eeeeee;" stylesheets="@../../../styles/GeneralDesign.css">
+                  <AnchorPane id="anchorPane" layoutX="437.0" layoutY="153.0" prefHeight="138.0" prefWidth="305.0" style="-fx-background-color: #eeeeee;" stylesheets="@../../../styles/GeneralDesign.css">
                      <children>
                         <Button id="viewMoreSmall" layoutX="94.0" layoutY="89.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toAttendance" prefHeight="37.0" prefWidth="117.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" text="View More" wrapText="true">
                            <font>
@@ -106,7 +106,7 @@
                         </Button>
                      </children>
                   </AnchorPane>
-                  <AnchorPane id="anchorPane" layoutX="438.0" layoutY="116.0" prefHeight="113.0" prefWidth="305.0" style="-fx-background-color: #393E46;" stylesheets="@../../../styles/GeneralDesign.css">
+                  <AnchorPane id="anchorPane" layoutX="437.0" layoutY="116.0" prefHeight="113.0" prefWidth="305.0" style="-fx-background-color: #393E46;" stylesheets="@../../../styles/GeneralDesign.css">
                      <children>
                         <Label fx:id="numOfDays" alignment="CENTER" layoutX="58.0" layoutY="43.0" prefHeight="41.0" prefWidth="189.0" text="0 days" textFill="WHITE">
                            <font>
@@ -125,8 +125,6 @@
                         </Label>
                      </children>
                   </AnchorPane>
-                  <AnchorPane id="anchorPane" layoutX="438.0" layoutY="347.0" prefHeight="138.0" prefWidth="305.0" style="-fx-background-color: #eeeeee;" stylesheets="@../../../styles/GeneralDesign.css" />
-                  <AnchorPane id="anchorPane" layoutX="438.0" layoutY="310.0" prefHeight="113.0" prefWidth="305.0" style="-fx-background-color: #393E46;" stylesheets="@../../../styles/GeneralDesign.css" />
                   <AnchorPane id="anchorPane" layoutX="761.0" layoutY="153.0" prefHeight="138.0" prefWidth="305.0" style="-fx-background-color: #eeeeee;" stylesheets="@../../../styles/GeneralDesign.css">
                      <children>
                         <Button id="viewMoreSmall" layoutX="94.0" layoutY="88.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toPayroll" prefHeight="37.0" prefWidth="117.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" text="View More" wrapText="true">
@@ -153,8 +151,8 @@
                            </font>
                         </Label>
                      </children></AnchorPane>
-                  <ChoiceBox fx:id="attendanceChoose" layoutX="927.0" layoutY="49.0" prefHeight="38.0" prefWidth="139.0" stylesheets="@../../../styles/GeneralDesign.css" />
-                  <Label alignment="CENTER_RIGHT" layoutX="974.0" layoutY="14.0" prefHeight="28.0" prefWidth="92.0" text="Month" textFill="WHITE">
+                  <ChoiceBox fx:id="attendanceChoose" layoutX="927.0" layoutY="53.0" prefHeight="38.0" prefWidth="139.0" stylesheets="@../../../styles/GeneralDesign.css" />
+                  <Label alignment="CENTER_RIGHT" layoutX="974.0" layoutY="18.0" prefHeight="28.0" prefWidth="92.0" text="Month" textFill="WHITE">
                      <font>
                         <Font name="Agency FB" size="23.0" />
                      </font>
@@ -164,8 +162,62 @@
                         <Font name="Agency FB Bold" size="23.0" />
                      </font>
                   </Label>
-                  <AnchorPane id="anchorPane" layoutX="761.0" layoutY="347.0" prefHeight="138.0" prefWidth="305.0" style="-fx-background-color: #eeeeee;" stylesheets="@../../../styles/GeneralDesign.css" />
-                  <AnchorPane id="anchorPane" layoutX="761.0" layoutY="310.0" prefHeight="113.0" prefWidth="305.0" style="-fx-background-color: #393E46;" stylesheets="@../../../styles/GeneralDesign.css" />
+                  <AnchorPane id="anchorPaneGhost" layoutX="437.0" layoutY="347.0" prefHeight="138.0" prefWidth="305.0" stylesheets="@../../../styles/GeneralDesign.css">
+                     <children>
+                        <Button id="viewMoreGhost" layoutX="94.0" layoutY="87.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="37.0" prefWidth="117.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" wrapText="true">
+                           <font>
+                              <Font name="Centaur" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="anchorPaneGhost" layoutX="437.0" layoutY="310.0" prefHeight="113.0" prefWidth="305.0" stylesheets="@../../../styles/GeneralDesign.css">
+                     <children>
+                        <Button id="viewMoreGhost" layoutX="88.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="37.0" prefWidth="130.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" wrapText="true">
+                           <font>
+                              <Font name="Centaur" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button id="viewMoreGhost" layoutX="94.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="117.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" wrapText="true">
+                           <font>
+                              <Font name="Centaur" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button id="viewMoreGhost" layoutX="116.0" layoutY="83.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="22.0" prefWidth="75.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" wrapText="true">
+                           <font>
+                              <Font name="Centaur" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="anchorPaneGhost" layoutX="761.0" layoutY="347.0" prefHeight="138.0" prefWidth="305.0" stylesheets="@../../../styles/GeneralDesign.css">
+                     <children>
+                        <Button id="viewMoreGhost" layoutX="94.0" layoutY="87.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="37.0" prefWidth="117.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" wrapText="true">
+                           <font>
+                              <Font name="Centaur" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="anchorPaneGhost" layoutX="761.0" layoutY="310.0" prefHeight="113.0" prefWidth="305.0" stylesheets="@../../../styles/GeneralDesign.css">
+                     <children>
+                        <Button id="viewMoreGhost" layoutX="88.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="37.0" prefWidth="130.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" wrapText="true">
+                           <font>
+                              <Font name="Centaur" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button id="viewMoreGhost" layoutX="94.0" layoutY="51.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="117.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" wrapText="true">
+                           <font>
+                              <Font name="Centaur" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button id="viewMoreGhost" layoutX="116.0" layoutY="84.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="22.0" prefWidth="75.0" scaleShape="false" stylesheets="@../../../styles/GeneralDesign.css" wrapText="true">
+                           <font>
+                              <Font name="Centaur" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
                </children>
             </AnchorPane>
         </items>
